@@ -5,7 +5,6 @@ namespace ChatApp.Services
     public class MessageService
     {
         static MessageService _instance;
-
         public static MessageService Instance
         {
             get
@@ -16,7 +15,6 @@ namespace ChatApp.Services
                 return _instance;
             }
         }
-
         readonly User user1 = new User
         {
             Name = "Alaya Cordova",
@@ -77,7 +75,6 @@ namespace ChatApp.Services
             Image = "emoji10.png",
             Color = Color.FromArgb("#FF95A2")
         };
-
         public List<User> GetUsers()
         {
             return new List<User>
@@ -121,7 +118,6 @@ namespace ChatApp.Services
               },
             };
         }
-
         public List<Message> GetMessages(User sender)
         {
             return new List<Message> {

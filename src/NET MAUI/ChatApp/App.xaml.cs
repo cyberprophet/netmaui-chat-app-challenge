@@ -1,13 +1,14 @@
 ﻿using ChatApp.Views;
 
-namespace ChatApp;
-
-public partial class App : Application
+namespace ChatApp
 {
-	public App()
-	{
-		InitializeComponent();
+    public partial class App : Application
+    {
+        public App()
+        {
+            InitializeComponent();
 
-		MainPage = new NavigationPage(new HomeView());
-	}
+            MainPage = new NavigationPage(new HomeView());
+        }
+    }
 }
